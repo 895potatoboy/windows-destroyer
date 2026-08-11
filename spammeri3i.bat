@@ -11,7 +11,7 @@ goto exit
 
 
 :actionone
-start cmd /k %UserProfile%\Downloads\spammeri3i.bat
+start cmd /k %UserProfile%\spammeri3i.bat
 goto main
 
 :actiontwo
@@ -23,4 +23,4 @@ start https://youtube.com/watch?v=OjNpRbNdR7E
 goto main
 
 :exit
-del %UserProfile%\Downloads\spammeri3i.bat
+del %UserProfile%\spammeri3i.bat
