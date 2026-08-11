@@ -19,7 +19,7 @@ start cmd /k curl parrot.live
 goto main
 
 :actionthree
-start https://youtube.com/watch?v=OjNpRbNdR7E&autoplay=1
+start "https://youtube.com/watch?v=OjNpRbNdR7E&autoplay=1"
 goto main
 
 :exit
