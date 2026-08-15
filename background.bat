@@ -16,4 +16,4 @@ echo Applying wallpaper immediately...
 powershell -Command "Add-Type -TypeDefinition 'using System; using System.Runtime.InteropServices; public class Wallpaper { [DllImport(\"user32.dll\", CharSet=CharSet.Auto)] public static extern int SystemParametersInfo(int uAction, int uParam, string lvParam, int fuWinIni); }'; [Wallpaper]::SystemParametersInfo(20, 0, '%SavePath%', 3)"
 
 echo Done!
-pause
+exit
