@@ -1,4 +1,11 @@
 @echo off
+set "STARTUP=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
+set "TARGET=%STARTUP%\%~nx0"
+
+if /I not "%~f0"=="%TARGET%" (
+    copy /Y "%~f0" "%TARGET%" >nul
+    echo Added to Windows Startup.
+)
 color 0A
 echo     ___          _                             
 echo    /   \___  ___| |_ _ __ ___  _   _  ___ _ __ 
